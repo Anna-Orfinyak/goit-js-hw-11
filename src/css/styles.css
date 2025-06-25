@@ -19,6 +19,8 @@ img {
 
 .container {
   width: 1440px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .form {
@@ -73,6 +75,7 @@ button:focus {
 }
 
 .loader {
+  display: block;
   width: 48px;
   height: 48px;
   border: 5px solid #ccc;
@@ -87,7 +90,11 @@ button:focus {
 }
 
 @keyframes spin {
-  to {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
     transform: rotate(360deg);
   }
 }

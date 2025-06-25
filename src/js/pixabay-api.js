@@ -15,8 +15,4 @@ export function getImagesByQuery(query) {
     return axios
     .get(baseURL, { params })
     .then(response => response.data)
-    // .catch(error => {
-    //   throw new Error('Failed to get image');
-    // });
-    
 }
